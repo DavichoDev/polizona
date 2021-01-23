@@ -9,7 +9,12 @@ $(document).ready(function(){
 		q1();
 		q2();
 	});
-})
+
+	$("#probabilidad").click(function(){
+		llenarTabla1();
+		alert('clicked');
+	});
+});
             
 function recargaLista(){
 	var tabla=$("#tabla").val();
@@ -32,6 +37,19 @@ function recargaLista2(){
 		$("#columna2").html(data);
 	}) 
 }
+
+function llenarTabla1(){
+	// var query1=$("#query1").val();
+	$.ajax({
+		type:"POST",
+		url:"assets/php/llenarTabla.php",
+		data:{query1:query1}
+	}).done(function(data){
+		$("#tbody").html(data);
+		alert(data);
+	})
+}
+
 
 function q1(){
 	
@@ -81,4 +99,8 @@ function selectAlmacen(){
 
 	// document.getElementById('pCostUnits').innerText=`hola`;
 	document.getElementById('pCostUnits').innerHTML=("hola mundo")
+}
+
+function cargarGOJS() {
+	console.log('Cargado');
 }

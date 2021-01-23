@@ -24,10 +24,10 @@
 </head>
 
 <?php
-  $hostname_localhost ="68.70.164.26";
-  $database_localhost ="polizona_mercado";
-  $username_localhost ="polizona_estudiante";
-  $password_localhost ="UPIICSAes#1";
+	$hostname_localhost ="68.70.164.26";
+	$database_localhost ="polizona_130";
+	$username_localhost ="polizona_130";
+  $password_localhost ="Cien+30=130";
   $json=array();
   $jsonTwo=array();
 
@@ -79,7 +79,7 @@
             <li class="">
                 <a href="./rextester.php">
                 <i class="fas fa-atom"></i>
-                    <p>API Rextester</p>
+                    <p>Agrupador</p>
                 </a>
             </li>
             
@@ -184,7 +184,7 @@
   <script src="assets/js/core/bootstrap.min.js"></script>
   <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
   <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
   <!-- Chart JS -->
   <script src="assets/js/plugins/chartjs.min.js"></script>
   <!--  Notifications Plugin    -->

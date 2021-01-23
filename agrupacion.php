@@ -25,9 +25,9 @@
 <?PHP
     // Cambiar datos para entrar a la base de datos
     $hostname_localhost ="68.70.164.26";
-    $database_localhost ="polizona_mercado";
-    $username_localhost ="polizona_estudiante";
-      $password_localhost ="UPIICSAes#1";
+    $database_localhost ="polizona_130";
+    $username_localhost ="polizona_130";
+    $password_localhost ="Cien+30=130";
     $json=array();
     $jsonTwo=array();
   
@@ -104,7 +104,7 @@
             <li class="">
                 <a href="./rextester.php">
                 <i class="fas fa-atom"></i>
-                    <p>API Rextester</p>
+                    <p>Agrupador</p>
                 </a>
             </li>
             
@@ -595,25 +595,25 @@
       $json=array();
       $jsonTwo=array();
       $conexion = mysqli_connect($hostname_localhost,$username_localhost,$password_localhost,$database_localhost);
-      //Competidores Almacen1
+      //Competidores A1
       $consultaCompetidores="select idempresa as competidores, (sum(costoembarque)/sum(unidades)) as costoUnitario , ((sum(costoembarque)/sum(unidades))*0.2) as costos from embarque where (idempresa='5' or idempresa='11'  or idempresa='17' or idempresa='23' or idempresa='29' or idempresa='35' or idempresa='41' or idempresa='130') and idalmacen='1' group by idempresa order by (sum(costoembarque)/sum(unidades)) asc ";
       $resultadoCompetidores=mysqli_query($conexion,$consultaCompetidores);
-      //Competidores Almacen2
+      //Competidores A2
       $consultaCompetidores2="select idempresa as competidores, (sum(costoembarque)/sum(unidades)) as costoUnitario , ((sum(costoembarque)/sum(unidades))*2) as costos from embarque where (idempresa='5' or idempresa='11'  or idempresa='17' or idempresa='23' or idempresa='29' or idempresa='35' or idempresa='41' or idempresa='130') and idalmacen='2' group by idempresa order by (sum(costoembarque)/sum(unidades)) asc";
       $resultadoCompetidores2=mysqli_query($conexion,$consultaCompetidores2);
-      //Proveedores Almacen1
+      //Proveedores A1
       $consultaProveedores="select idempresa as proveedores_in1, (sum(costoembarque)/sum(unidades)) as costoUnitario , ((sum(costoembarque)/sum(unidades))*0.2) as costos from embarque where (idempresa='1' or idempresa='7'  or idempresa='13' or idempresa='19' or idempresa='25' or idempresa='31' or idempresa='37' or idempresa='43'or idempresa='49') and idalmacen='1' group by idempresa order by (sum(costoembarque)/sum(unidades)) asc";
       $resultadoProveedores=mysqli_query($conexion,$consultaProveedores);
-      //Proveedores Almacen2
+      //Proveedores A2
       $consultaProveedores2="select idempresa as proveedores_in6, (sum(costoembarque)/sum(unidades)) as costoUnitario , ((sum(costoembarque)/sum(unidades))*2) as costos from embarque where (idempresa='6' or idempresa='12'  or idempresa='18' or idempresa='24' or idempresa='30' or idempresa='36' or idempresa='42' or idempresa='48') and idalmacen='2' group by idempresa order by (sum(costoembarque)/sum(unidades)) asc";
       $resultadoProveedores2=mysqli_query($conexion,$consultaProveedores2);
       // Clientes
       $consultaC1="select idcompradora, idvendedora, coeficiente from encadenamiento where idvendedora='5';";
       $resultadoC1=mysqli_query($conexion,$consultaC1);
-      // Clientes Insumo 1
+      // Clientes I1
       $consultaC10="  select idempresa as clientes_in3, (sum(costoembarque)/sum(unidades)) as costoUnitario , ((sum(costoembarque)/sum(unidades))*0.4) as costos from embarque where (idempresa='3' or idempresa='9'  or idempresa='15' or idempresa='21' or idempresa='27' or idempresa='33' or idempresa='39' or idempresa='45'or idempresa='51') and idalmacen='1' group by idempresa order by (sum(costoembarque)/sum(unidades)) asc;";
       $resultadoC10=mysqli_query($conexion,$consultaC10);
-      // Clientes Insumo 2
+      // Clientes I2
       $consultaC20="select idempresa as clientes_in4, (sum(costoembarque)/sum(unidades)) as costoUnitario , ((sum(costoembarque)/sum(unidades))*0.8) as costos from embarque where (idempresa='4' or idempresa='10'  or idempresa='16' or idempresa='22' or idempresa='28' or idempresa='34' or idempresa='40' or idempresa='46') and idalmacen='2' group by idempresa order by (sum(costoembarque)/sum(unidades)) asc";
       $resultadoC20=mysqli_query($conexion,$consultaC20);
 
@@ -895,7 +895,7 @@
   <script src="assets/js/core/bootstrap.min.js"></script>
   <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
   <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
   <!-- Chart JS -->
   <script src="assets/js/plugins/chartjs.min.js"></script>
   <!--  Notifications Plugin    -->

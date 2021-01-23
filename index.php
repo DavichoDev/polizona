@@ -67,7 +67,7 @@
             <li class="">
                 <a href="./rextester.php">
                 <i class="fas fa-atom"></i>
-                    <p>API Rextester</p>
+                    <p>Agrupador</p>
                 </a>
             </li>
             
@@ -148,7 +148,7 @@
   <script src="assets/js/core/bootstrap.min.js"></script>
   <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
   <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
   <!-- Chart JS -->
   <script src="assets/js/plugins/chartjs.min.js"></script>
   <!--  Notifications Plugin    -->

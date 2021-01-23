@@ -1,8 +1,8 @@
 <?php
     $hostname_localhost ="68.70.164.26";
-    $database_localhost ="polizona_mercado";
-    $username_localhost ="polizona_estudiante";
-    $password_localhost ="UPIICSAes#1";
+    $database_localhost ="polizona_130";
+    $username_localhost ="polizona_130";
+    $password_localhost ="Cien+30=130";
     
     $tabla = $_POST["tabla"];
     $conexion = mysqli_connect($hostname_localhost,$username_localhost,$password_localhost,$database_localhost);
